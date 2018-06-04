@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+
+        var metier,
+            pays,
+            prenom,
+            nbreDeGosse;
+        metier = "calineur";
+        pays = "Bisouland";
+        prenom = "Calibisouneuse";
+        nbreDeGosse = 10;
+        console.log("Vous serez "+ metier +" et habiterez à " + pays,
+        " et marié a " + prenom + " avec " + nbreDeGosse + " enfants.");
+
+        //---------------------------------------------------------------------------------------------------------------------------
+
+        var year = 2018;
+        var birthYear = 1993;
+        var age = year - birthYear
+        console.log("j'ai " + age + " ans" );
+
+        //---------------------------------------------------------------------------------------------------------------------------
+
+        var age = 24;
+        var ageMax = 100;
+        var denree = "bananes"
+        var denreeConsumed = 3;
+        var denreeLife = ((100*365)-(24*365))/3;
+        console.log("Il vous reste " + denreeLife + " de " +
+        denree + " avant d'atteindre l'age de " + ageMax + " ans." );
+
+        //-------------------------------------------------------------------------------
+
+        var etapeUne,
+            etapeDeux,
+            etapeTrois,
+            etapeQuatre; // result
+        etapeUne = 1 + 2; 
+        etapeDeux = etapeUne * 3;
+        etapeTrois = 4 / 2;
+        etapeQuatre = etapeDeux + etapeTrois;
+        var result =  etapeQuatre;
+        console.log(result);
+    </script>
+</body>
+</html>
