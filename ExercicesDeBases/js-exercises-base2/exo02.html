@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>écriture d'une fonction renvoyant une valeur</title>
+</head>
+<body>
+    <button onclick="surfaceCercle()" name="button" class="button">
+        Surface de votre rayon
+    </button>
+    <style>
+        .button {
+            border: 2px solid black;
+            background-color: rgba(0, 0, 255, 0.432);
+            padding: 20px;
+            font-size: 50px;
+            font-weight: bold;
+        };
+    </style>
+    
+    <script>
+        function surfaceCercle() {
+            var rayon = parseInt(prompt("entrez votre rayon: "));
+            var Pi = Math.PI
+            alert("La surface de votre cercle est de: " + ((rayon * rayon) * Pi ));
+        }
+    </script>
+</body>
+</html>
