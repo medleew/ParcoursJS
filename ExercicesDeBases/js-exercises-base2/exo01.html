@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>écriture d'une fonction</title>
+</head>
+<body>
+    <button class="button" onclick="surfaceDuRectangle()" name="button">
+        Surface d'un rectangle:
+    </button>
+    <style>
+        .button {
+            background-color: rgba(0, 0, 255, 0.425);
+            padding: 20px;
+            border: 2px solid black;
+            margin: 20px;
+        }
+    </style>
+    <button class="button" onclick="perimetreDuRectangle()" name="button">
+        Perimetre d'un rectangle:
+    </button>
+
+    <script>
+            function surfaceDuRectangle() {
+                var largeur = prompt("Largeur du rectangle");
+                var longueur = prompt("Longueur du rectangle");
+                alert("La surface de votre rectangle est de: " + (largeur * longueur));
+            }
+
+            function perimetreDuRectangle() {
+                var largeur = prompt("Largeur du rectangle");
+                var longueur = prompt("Longueur du rectangle");
+                alert("Le perimetre de votre rectangle est de: " + ((largeur + longueur)*2));
+            }
+
+    </script>
+</body>
+</html>
