@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>utilisation de switch</title>
+</head>
+<body>
+    <button onclick="faireChoix()" name="button" class="button"> 
+        Choix:
+    </button>
+    <style>
+        .button {
+            border: 5px solid black;
+            padding: 20px;
+            font-size: 20px;
+            background-color: rgba(0, 0, 255, 0.363);
+        }
+    </style>
+    <script>
+        function faireChoix () {
+            var x = parseInt(prompt("Choix entre 1 2 et 3"));
+            switch (x) {
+                case 1:
+                    alert("Merci");
+                    break;
+                case 2:
+                    alert("Bonjour");
+                    break;
+                case 3:
+                    alert("Au revoir");
+                    break;
+                default:
+                alert("Dumbass");
+                    break;
+            }
+        }
+        
+    </script>
+</body>
+</html>
