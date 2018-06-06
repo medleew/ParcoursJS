@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>utilisation de switch et de l'objet date</title>
+</head>
+<body>
+    <button onclick="jourDeLaSemaine()" name="button" class="button">
+        Aujourdhui on est le: 
+    </button>
+    <style>
+        .button {
+            border: 5px solid black;
+            padding: 20px;
+            font-size: 20px;
+            background-color: rgba(0, 0, 255, 0.363);
+        }
+    </style>
+    <script>
+        function jourDeLaSemaine() {
+            var ladate = new Date()
+            var jour = ladate.getDay();
+            switch (jour) {
+                case 0: alert("dimanche");
+                    break;
+                case 1: alert("lundi");
+                    break;
+                case 2: alert("mardi");
+                    break;
+                case 3: alert("mercredi");
+                    break;
+                case 4: alert("jeudi");
+                    break;
+                case 5: alert("vendredi");
+                    break;
+                case 6: alert("samedi");
+                    break;
+                default: alert("spaceDay");
+            }
+        }
+    </script>
+</body>
+</html>
