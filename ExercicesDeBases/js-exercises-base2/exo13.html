@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcul de l'IMC</title>
+</head>
+<body>
+    <button onclick="calculIMC()" name="button" class="button">
+        Calcul de votre IMC:
+    </button>
+    <style>
+        .button {
+            border: 5px solid black;
+            padding: 20px;
+            background-color: rgba(0, 0, 255, 0.459);
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        function calculIMC() {
+            let poids, taille, result;
+            poids = parseFloat(prompt("entrez votre poids ( en kg )"));
+            taille = parseFloat(prompt("entrez votre taille ( en m ) "));
+            result = poids / (taille*taille);
+            alert( "votre IMC est de = " + Math.round(result*100)/100);
+            if (result < 16.5) {
+                alert("vous etes en état de dénutrition ou famine ");
+            } else if (result <= 16.5 && result < 18.5) {
+                alert("Vous êtes maigre");
+            } else if (result >= 18.5 && result < 25 ) {
+                alert("vous êtes de corpulence normal");
+            } else if (result >= 25 && result < 30) {
+                alert("vous êtes en surpoids");
+            } else if (result >= 30 && result < 35) {
+                alert("vous êtes un obése modérée");
+            } else if (result >= 35 && result < 40) {
+                alert("vous êtes un obése sévère")
+            } else if ( result > 40) {
+                alert("vous êtes un obése morbide");
+            }
+        }
+    </script>
+</body>
+</html>
