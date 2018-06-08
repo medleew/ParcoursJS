@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>utilisation de la boucle for</title>
+</head>
+<body>
+    <button onclick="somme()" name="button" class="button">
+        entrez un nombre:
+    </button>
+    <style>
+        .button {
+            background-color: blue;
+            border: 2px solid black;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        function somme() {
+            let a = 0;
+            let ordre = 1;
+            for (let i = 1; i <= 3; i++) {
+                a += parseInt(prompt( ordre + ": Ajoutez un nombre"));
+                ++ordre;
+            }
+            alert("La somme est de " + a);
+        }
+    </script>
+</body>
+</html>
