@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversion de température Celsius, Fahrenheit et Kelvin</title>
+</head>
+<body>
+    <button onclick="conversionTemperature()" name="button" class="button">
+        Conversion de temperature
+    </button>
+    <style>
+        .button {
+            border: 5px solid black;
+            padding: 20px;
+            background-color: blue;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+         function conversionTemperature() {
+            var menu = prompt("Menu:\n" + "0 : Fin du programme\n" +
+                "1 : De Celsius vers Fahrenheit\n" + "2 : De Celsius vers Kelvin\n" +
+                "3 : De Fahrenheit vers Celsius\n" + "4 : De Fahrenheit vers Kelvin\n" +
+                "5 : De Kelvin vers Celsius\n" + "6 : De Kelvin vers Fahrenheit\n");
+            var temperature;
+            var result;
+            if (menu == 1) {
+                temperature = parseFloat(prompt("Quelle température en Celsius ?"));
+                result = (temperature * (9/5)) + 32;
+                alert("La conversion de " + temperature + " °C est de " + result + " °F.")
+            }
+            else if (menu == 2) {
+                temperature = parseFloat(prompt("Quelle température en Celsius ?"));
+                result = temperature + 273.15;
+                alert("La conversion de " + temperature + " °C est de " + result + " K.")
+            }
+            else if (menu == 3) {
+                temperature = parseFloat(prompt("Quelle température en Fahrenheit ?"));
+                result = (temperature - 32) / (9/5);
+                alert("La conversion de " + temperature + " °F est de " + result + " °C.")
+            }
+            else if (menu == 4) {
+                temperature = parseFloat(prompt("Quelle température en Fahrenheit ?"));
+                result = (temperature - 32 ) * (5/9) + 273.15;
+                alert("La conversion de " + temperature + " °F est de " + result + " K.")
+            }
+            else if (menu == 5) {
+                temperature = parseFloat(prompt("Quelle température en Kelvin ?"));
+                result = temperature - 273.15;
+                alert("La conversion de " + temperature + " K est de " + result + " °C.")
+            }
+            else if (menu == 6) {
+                temperature = parseFloat(prompt("Quelle température en Kelvin ?"));
+                result = (temperature * (9/5)) - 459.67;
+                alert("La conversion de " + temperature + " K est de " + result + " °F.")
+            }
+        }
+    </script>
+</body>
+</html>
