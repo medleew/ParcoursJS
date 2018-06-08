@@ -20,10 +20,11 @@
     </style>
     <script>
         function testWhile () {
-           do {
-            prompt("entrez une phrase");
-           } while (!('p')); 
-           alert(testWhile())
+            let phrase = prompt("entrez une phrase");
+         while (!phrase.includes("p")) {
+            phrase = prompt("entrez une phrase")
+         }
+         alert(phrase);
         }
     </script>
 </body>
