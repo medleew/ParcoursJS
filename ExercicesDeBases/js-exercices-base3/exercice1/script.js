@@ -1,2 +1,8 @@
-let change = document.getElementById('image1');
-    change.src = 'images/image1_2.jpg';
+
+let change = document.getElementById('image1')
+change.addEventListener('mouseover', function changeImage() {
+    this.src = "images/image1_2.jpg";
+    }
+);
+
+
