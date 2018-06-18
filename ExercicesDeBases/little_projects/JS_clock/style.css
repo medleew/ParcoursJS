@@ -23,8 +23,8 @@ body {
     position: relative;
     padding: 2rem;
     box-shadow: 
-                0 0 0px 4px rgba(0, 0, 0, 0.1),
-                inset 0 0 0 3px #EFEFEF, 
+                0 0 0px 4px rgba(160, 110, 110, 0.726),
+                inset 0 0 0 3px rgb(146, 75, 75), 
                 inset 0 0 10px black,
                 0 0 10px rgba(0, 0, 0, 0.2)
 }
@@ -36,9 +36,22 @@ body {
     transform: translateY(-3px);
 }
 
-.hand {
+.handHours {
+    width: 40%;
+    height: 8px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform-origin: 100%;
+    transform: rotate(90deg); 
+    transition: all 0.05s;
+    transition-timing-function: ease-in-out;
+}
+
+.handMinutes {
     width: 50%;
-    height: 6px;
+    height: 3px;
     background: black;
     position: absolute;
     top: 50%;
@@ -46,4 +59,60 @@ body {
     transform: rotate(90deg); 
     transition: all 0.05s;
     transition-timing-function: ease-in-out;
+}
+
+.handSecondes {
+    width: 50%;
+    height: 3px;
+    background: rgb(204, 5, 5);
+    position: absolute;
+    top: 50%;
+    left: 15;
+    transform-origin: 100%;
+    transform: rotate(90deg); 
+    transition: all 0.05s;
+    transition-timing-function: ease-in-out;
+}
+
+.centerPoint {
+    width: 10px;
+    height: 10px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background: black;
+    position: relative;
+    top: 8%;
+    left: 48%;
+}
+
+* p {
+    /* display: inline-block; */
+    color: white;
+    font-weight: bolder;
+    width: 10px;
+    height: 10px;
+    position: relative;
+}
+.three {
+    position: relative;
+    left: 108%;
+    top: 30%;
+}
+
+.twelve {
+    position: relative;
+    top: -20%;
+    left: 46%;
+}
+
+.nine {
+    position: relative;
+    top: 8%;
+    left: -12% ;
+}
+
+.six {
+    position: relative;
+    top: 80%;
+    left: 48%;
 }
