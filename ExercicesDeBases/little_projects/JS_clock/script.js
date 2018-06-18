@@ -2,7 +2,7 @@ const secondHand = document.querySelector('.secondHand');
 const minHand = document.querySelector('.minHand');
 const hourHand = document.querySelector('.hourHand');
 // let utcDate = new Date (Date.UTC(2018,6,17,21,10));
-// let utcDate = new Date (Date.UTC);
+let utcDate = new Date (Date.UTC);
 function setDate () {
     // const now = utcDate; 
     const now = new Date ();
