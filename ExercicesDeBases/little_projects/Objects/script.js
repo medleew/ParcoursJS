@@ -77,3 +77,42 @@
 //     }
 // }
 // mainCharacter.attack();
+
+// let character = function() {
+//     this.a = 60
+// }
+// let character = function(hp, atk) {
+//     this.health = hp;
+//     this.attack = atk;
+//     this.takeDamage = (x) => {
+//       this.a -= x;
+//     }
+//   }
+  
+//   let attack = (attacker, defender) => {
+//     defender.health -= attacker.attack;
+//   }
+  
+//   mainCharacter = new character(100, 20);
+//   enemyCharacter = new character(80, 25);
+  
+//   attack(mainCharacter, enemyCharacter);
+  
+//   console.log(mainCharacter.health);
+//   console.log(enemyCharacter.health);
+
+let character = function() {
+    this.name = "noobies";
+    this.lvl = 10;
+    this.life = 50;
+    weapon = {};
+    this.weapon.name = "noobator";
+    this.weapon.damage = 5;
+    function attack () {
+        console.log(this.name + " attaque avec l'arme " + this.weapon.name + " les dégâts sont " + (this.lvl * this.weapon.damage));
+    }
+    // attack();
+    function recieveDamage () {
+        console.log();
+    }
+    }
