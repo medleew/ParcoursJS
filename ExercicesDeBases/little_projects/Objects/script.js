@@ -64,3 +64,16 @@
 //     }
 //     stuffLvlMin();
 
+// let mainCharacter = {
+//     name : "medlee",
+//     lvl : 1,
+//     life : 10,
+//     weapon : {
+//         name : "noobator",
+//         damage : 1,
+//     },
+//     attack : function () {
+//         console.log(this.name + " attaque avec l'arme " + this.weapon.name + " les dégâts sont " + (this.lvl * this.weapon.damage));
+//     }
+// }
+// mainCharacter.attack();
